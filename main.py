@@ -8,11 +8,18 @@ size = w, h
 screen = pygame.display.set_mode(size)
 
 
-def draw():
-    line_color = pygame.Color('white')
+def draw_line(color, line_points):
     line_w = 0
-    line_points = ((25, 25), (600, 100))
-    pygame.draw.rect(screen, line_color, line_points, line_w)
+    pygame.draw.rect(screen, pygame.Color(color), line_points, line_w)
+
+
+def draw():
+    line_1_color = "white"
+    line_1_points = ((25, 25), (600, 100))
+    draw_line(line_1_color, line_1_points)
+    line_3_color = "red"
+    line_3_points = ((25, 225), (600, 100))
+    draw_line(line_3_color, line_3_points)
 
 
 draw()
