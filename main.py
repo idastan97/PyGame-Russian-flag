@@ -20,6 +20,9 @@ def draw():
     line_3_color = "red"
     line_3_points = ((25, 225), (600, 100))
     draw_line(line_3_color, line_3_points)
+    line_2_color = "blue"
+    line_2_points = ((25, 125), (600, 100))
+    draw_line(line_2_color, line_2_points)
 
 
 draw()
